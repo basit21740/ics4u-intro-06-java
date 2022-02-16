@@ -7,20 +7,25 @@
  * @since   2022-02-15
  */
 final class HelloWorld {
+    /**
+    * Prevents instantiation.
+    *
+    * @throws IllegalStateException
+    *
+    */
+
     private HelloWorld() {
-        // Prevent instantiation
-        // Optional: throw an exception e.g. AssertionError
-        // if this ever *is* called
         throw new IllegalStateException("Cannot be instantiated");
     }
     /**
-  * This method prints out "Hello, World!".
-  *
-  * @param args none will be used
-  */
+    * This method prints out "Hello, World!".
+    *
+    * @param args none will be used
+    */
 
     public static void main(final String[] args) {
         System.out.println("Hello, World!");
         System.out.println("\nDone.");
     }
 }
+
